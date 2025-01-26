@@ -1,0 +1,16 @@
+
+1. 首先进入 course_ai_transp_ros_ws 文件
+cd course_ai_transp_ros_ws
+  
+2. 编译消息文件,在终端中输入
+catkin_make
+
+3. 将编译的包的路径加入系统
+source devel/setup.bash
+
+4. 检查下包是否可以看到
+rospack list
+应该能找到cav_msgs /**/**/course_ai_transp_ros_ws/src/cav_msgs
+
+5. 测试下是否可用
+python test_UTM.py

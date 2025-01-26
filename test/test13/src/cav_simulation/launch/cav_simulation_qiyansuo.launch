@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+ 
+  <arg name="output" default="screen" /> <!-- screen/log -->
+  <arg name="required" default="true" />
+  <arg name="respawn" default="false" />
+
+  <group ns="cav_simulator">
+    <node pkg="cav_simulation" type="cav_simulation" name="cav_simulation" respawn="$(arg respawn)" required="$(arg required)" output="$(arg output)">
+      <param name="vehicle_type"   value="2" /> <!-- 1:Lynx 2:YHS/--> 
+      
+      <!-- tsinghua qiyansuo-->
+      <param name="x_0"     value="116.328200" />
+      <param name="y_0"     value="40.006620" />
+      <param name="heading_0"   value="2.335" /> 
+
+    </node>
+
+  </group>
+  
+</launch>
+ 
