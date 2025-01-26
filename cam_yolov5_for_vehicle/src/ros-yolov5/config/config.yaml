@@ -1,0 +1,6 @@
+yolov5:
+  action: False
+  path: /home/tristan/yolov5
+  weight: /home/tristan/yolov5/yolov5l.pt
+  device: gpu
+  img_size: 640
